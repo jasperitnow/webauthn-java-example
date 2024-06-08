@@ -1,9 +1,10 @@
 package com.webauthn.app.utility;
 
-import javax.persistence.AttributeConverter;
-import javax.persistence.Converter;
 
 import com.yubico.webauthn.data.ByteArray;
+
+import jakarta.persistence.AttributeConverter;
+import jakarta.persistence.Converter;
 
 @Converter(autoApply = true)
 public class ByteArrayAttributeConverter implements AttributeConverter<ByteArray, byte[]> {
